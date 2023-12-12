@@ -1,0 +1,137 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.aplikace {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+header {
+    background-color: #3498db;
+    padding: 15px;
+    border-radius: 12px 12px 0 0;
+}
+
+h1 {
+    color: #fff;
+    margin: 0;
+}
+
+img {
+    width: 20%;
+}
+
+.Hledej,
+.Oblibene {
+    margin-top: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2188cb;
+}
+
+.Tlacitko {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Tlacitko button {
+    flex: 1;
+    margin-right: 5px;
+}
+
+.Info-Pocasi {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+}
+
+.Oblibene-Mesto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.OblibeneMestoTlacitko {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    margin: 6px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 120px;
+    transition: background-color 0.3s ease;
+}
+
+.OblibeneMestoTlacitko:hover {
+    background-color: #2188cb;
+}
+
+.OblibeneMestoTlacitko span {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.OblibeneMestoTlacitko:hover span {
+    background-color: #fff;
+    color: #c0392b;
+}
+
+/* responzivita */
+@media only screen and (max-width: 600px) {
+    img {
+        width: 40%;
+    }
+}

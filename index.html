@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPER POČASÍ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="aplikace">
+        <header>
+            <h1>SUPER POČASÍ!</h1>
+            <img src="sun.png" alt="slunce">
+        </header>
+        <section class="Hledej">
+            <form id="NacistZeVstupu">
+                <label for="NazevMesta">Zjistěte si počasí:</label>
+                <input type="text" id="NazevMesta" required>
+                <div class="Tlacitko">
+                    <button type="submit">Získat přehled o počasí</button>
+                    <button id="PridatDoOblibenych">Přidat do oblíbených</button>
+                </div>
+            </form>
+            <div id="InfoPocasi" class="Info-Pocasi"></div>
+        </section>
+        <section class="Oblibene">
+            <h2>Vaše Oblíbená Místa</h2>
+            <div id="OblibeneMesto" class="Oblibene-Mesto">
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
